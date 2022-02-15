@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드라마 배너</title>
+    <style>
+        .container {
+            position: relative;
+            width: 1200px;
+            height: 500px;
+            background: #ccc;
+            overflow: hidden;
+        }
+
+        .gif {
+            width: 1250px;
+            position: absolute;
+        }
+        .logo {
+            position: absolute;
+            left: 368px;
+            top: 161px;
+            animation: logo 6s alternate infinite;
+            animation-delay: 2s;
+            opacity: 0;
+        }
+
+        p{
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+             width: 120px;
+             height: 30px;
+             padding-top: 5px;
+             text-align: center;
+             background: rgb(204, 34, 34);
+             color: #fff;
+             border: 1px rgb(204, 34, 34);
+             border-radius: 10px 0 10px 0;
+        }
+        @keyframes logo {
+            0% {
+                opacity: 0.5;
+                transform: translateY(-2000px);
+            }
+            40%{
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+            100%{
+                opacity: 1;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+            <img src="./imges/bg_img1.gif" alt="사랑의 불시착" class="gif">
+            <img src="./imges/logo 1.png" alt="logo" class="logo">
+            <a href="https://www.tving.com/contents/E002836241"><p>보러가기</p></a>
+        </div>
+    
+</body>
+</html>
